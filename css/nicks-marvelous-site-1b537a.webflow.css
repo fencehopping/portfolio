@@ -3938,6 +3938,60 @@
   display: grid;
 }
 
+.recent-projects-shell {
+  grid-column-gap: 1rem;
+  align-items: center;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.recent-projects-track {
+  grid-column-gap: 1.5rem;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  display: flex;
+  scrollbar-width: none;
+}
+
+.recent-projects-track::-webkit-scrollbar {
+  display: none;
+}
+
+.recent-project-card {
+  min-width: 24rem;
+  max-width: 24rem;
+  flex: none;
+}
+
+.recent-projects-arrow {
+  color: var(--untitled-ui--gray500);
+  background-color: #ffffffd9;
+  border: 1px solid #d0d5dd;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1;
+  transition: color .2s, background-color .2s, border-color .2s;
+  display: flex;
+  box-shadow: 0 8px 24px #10182814;
+}
+
+.recent-projects-arrow:hover {
+  color: var(--untitled-ui--gray700);
+  background-color: #fff;
+  border-color: #98a2b3;
+}
+
+.recent-projects-arrow span {
+  margin-top: -2px;
+}
+
 .facebooktitleheader {
   color: var(--untitled-ui--primary600);
   justify-content: center;
@@ -5494,6 +5548,19 @@
     grid-row-gap: 3rem;
     grid-template-columns: 1fr;
   }
+
+  .recent-projects-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-projects-arrow {
+    display: none;
+  }
+
+  .recent-project-card {
+    min-width: 22rem;
+    max-width: 22rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5512,6 +5579,11 @@
 
   .uui-heroheader06_component, .uui-layout63_item-list {
     grid-template-columns: 1fr;
+  }
+
+  .recent-project-card {
+    min-width: 85vw;
+    max-width: 85vw;
   }
 
   .uui-layout13_image-01 {
@@ -5840,5 +5912,4 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 
