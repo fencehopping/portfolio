@@ -4035,6 +4035,7 @@
 .recent-project-card--skipyou { --project-accent: #ff8a7b; }
 .recent-project-card--fifteen-hundred { --project-accent: #63dd79; }
 .recent-project-card--speech { --project-accent: #64bedc; }
+.recent-project-card--tap-chat { --project-accent: #2f78ed; }
 
 @supports not (color: color-mix(in srgb, white, black)) {
   .recent-project-card:before {
@@ -4173,6 +4174,11 @@
 
 .recent-project-title-logo--speech {
   width: clamp(180px, 16vw, 245px);
+  min-height: 104px;
+}
+
+.recent-project-title-logo--tap-chat {
+  width: clamp(180px, 17vw, 250px);
   min-height: 104px;
 }
 
