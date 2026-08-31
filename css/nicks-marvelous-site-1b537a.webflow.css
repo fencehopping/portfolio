@@ -4219,6 +4219,18 @@
   line-height: 1.65;
 }
 
+.recent-project-copy .recent-project-role {
+  color: #68717c;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-top: -8px;
+  margin-bottom: 18px;
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .recent-project-tags {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
