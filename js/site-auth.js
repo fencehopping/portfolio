@@ -1,7 +1,7 @@
 (function () {
   var STORAGE_KEY = "pdp-authenticated";
   var PASSWORD_HASH = "6c862b9a82dbd6f8b0d2ac9e60b083c2073071bc7e27a1b125e423df7862f139";
-  var GATE_PATH = "401.html";
+  var GATE_PATH = "access.html";
 
   function normalizePath(path) {
     if (!path) {
